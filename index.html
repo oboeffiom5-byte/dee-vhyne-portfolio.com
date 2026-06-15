@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deevhyne Web | Portfolio</title>
+  <link rel="stylesheet" href="MY PORT.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <img src="logo.png" alt="Deevhyne Web Logo" class="nav-logo" />
+      <span>Deevhyne Web</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">HOME</a></li>
+      <li><a href="About.html">ABOUT</a></li>
+      <li><a href="work.html">WORK</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" title="Toggle dark mode">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-tag">WELCOME TO MY WORLD</p>
+      <h1>Hi, I'm <span class="accent">DIVINE OBO EFFIOM</span></h1>
+      <h2>A <span class="accent typed" id="typedText"></span></h2>
+      <p class="hero-desc">
+        Passionate web developer with 6 months of hands-on experience building modern, 
+        responsive, and high-performance websites. I turn ideas into clean, functional digital experiences.
+      </p>
+      <div class="hero-btns">
+        <a href="work.html" class="btn btn-primary">View My Work</a>
+        <a href="contact.html" class="btn btn-outline">Hire Me</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="image-wrapper">
+        <img src="me2.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL + SKILLS STRIP -->
+  <div class="strip reveal">
+    <div class="strip-block">
+      <h4>FIND ME ON</h4>
+      <div class="social-icons">
+        <a href="#" class="soc-icon facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="soc-icon whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" class="soc-icon twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="soc-icon linkedin"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="strip-block">
+      <h4>BEST SKILLS</h4>
+      <div class="social-icons">
+        <span class="soc-icon skill"><i class="fa-brands fa-html5"></i></span>
+        <span class="soc-icon skill"><i class="fa-brands fa-css3-alt"></i></span>
+        <span class="soc-icon skill"><i class="fa-brands fa-js"></i></span>
+        <span class="soc-icon skill"><i class="fa-brands fa-react"></i></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHAT I DO -->
+  <section class="services reveal" id="services">
+    <div class="section-header">
+      <p class="tag">FEATURES</p>
+      <h2>WHAT I DO</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="fa-brands fa-html5"></i>
+        <h3>HTML / CSS Dev</h3>
+        <p>Crafting pixel-perfect, semantic, and accessible web interfaces from scratch.</p>
+      </div>
+      <div class="service-card">
+        <i class="fa-brands fa-js"></i>
+        <h3>JavaScript</h3>
+        <p>Building interactive, dynamic user experiences with modern vanilla JS and ES6+.</p>
+      </div>
+      <div class="service-card">
+        <i class="fa-solid fa-mobile-screen"></i>
+        <h3>Responsive Design</h3>
+        <p>Ensuring every website looks flawless on all screen sizes and devices.</p>
+      </div>
+      <div class="service-card">
+        <i class="fa-solid fa-bolt"></i>
+        <h3>Fast Loading Sites</h3>
+        <p>Optimising every website for speed, smooth performance, and a great user experience.</p>
+      </div>
+      <div class="service-card">
+        <i class="fa-solid fa-palette"></i>
+        <h3>UI / UX Design</h3>
+        <p>Designing clean, intuitive interfaces that delight users and drive engagement.</p>
+      </div>
+      <div class="service-card">
+        <i class="fa-brands fa-git-alt"></i>
+        <h3>Version Control</h3>
+        <p>Managing code efficiently with Git and GitHub for clean collaborative workflows.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO PREVIEW -->
+  <section class="portfolio reveal" id="portfolio">
+    <div class="section-header">
+      <p class="tag">PORTFOLIO</p>
+      <h2>MY RECENT WORK</h2>
+    </div>
+    <div class="portfolio-grid">
+      <div class="portfolio-card">
+        <img src="photography/BACK.jpg" alt="Photography Project" />
+        <div class="portfolio-overlay">
+          <h3>Photography Portfolio</h3>
+          <p>Visual storytelling showcase</p>
+          <a href="work.html" class="btn btn-primary">View More</a>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <img src="unicross portal/unicross.webp" alt="Unicross Portal" />
+        <div class="portfolio-overlay">
+          <h3>Unicross Portal</h3>
+          <p>Educational platform interface</p>
+          <a href="work.html" class="btn btn-primary">View More</a>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <img src="music/back.jpg" alt="Music Project" />
+        <div class="portfolio-overlay">
+          <h3>Music Collection</h3>
+          <p>Audio streaming interface</p>
+          <a href="work.html" class="btn btn-primary">View More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials reveal" id="testimonials">
+    <div class="section-header">
+      <p class="tag">TESTIMONIALS</p>
+      <h2>What My <span class="accent">Clients Say</span></h2>
+    </div>
+    <div class="testimonial-carousel">
+      <div class="testimonial-track" id="testimonialTrack">
+        <div class="testimonial-card">
+          <img src="17ae24891c3ccbf20a038279ce8d7a5a.jpg" alt="Robert Fox" />
+          <h4>Robert Fox</h4>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>"Absolutely amazing work! Delivered a stunning website beyond my expectations. Highly recommend!"</p>
+        </div>
+        <div class="testimonial-card">
+          <img src="80dc56272a7b6c8ac949b50ae8a2f2fa.jpg" alt="Kathryn Murphy" />
+          <h4>Kathryn Murphy</h4>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>"Professional, fast, and creative. My site looks incredible and loads super fast!"</p>
+        </div>
+        <div class="testimonial-card">
+          <img src="26a3212a20fa18c33be4158810fafef3.jpg" alt="Thiery Henry" />
+          <h4>Thiery Henry</h4>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>"Top-notch developer. Great communication and the end result was exactly what I envisioned."</p>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <button id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="dots" id="carouselDots"></div>
+        <button id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 <span class="accent">Deevhyne Web</span> — Designed & Built by Divine Obo</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="work.html">Work</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <a href="#home" class="scroll-top" id="scrollTop"><i class="fa-solid fa-arrow-up"></i></a>
+
+  <script src="my port.js"></script>
+</body>
+</html>
