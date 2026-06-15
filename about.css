@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content:space-between;
+    display: flex;
+}
+.image{
+    background: url(blackme.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:480px;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 10px 0px 15px #373434;
+    margin-right: 6%;
+    margin-top: 6%;
+}
+.info{
+   margin-left: 6%; 
+   margin-bottom: 11%;
+}
+.about h2{font-weight: bold;
+    font-size: 30px;
+    white-space:nowrap ;
+    overflow:hidden ;
+    border-right: 1px solid #171818;
+    width: 1ch;
+    animation: typing 2s infinite;transition: ease;
+
+}
+.about h6{
+    margin-top: 10px;
+    line-height: 18px;
+    font-weight: normal;
+    font-size: 12px;
+}
+.citation{
+    margin-top: 30px;
+}
+.citation ul{
+    margin-top: 10px;
+}
+.citation ul li{
+    line-height: 25px;
+    font-weight: normal;
+}
+
+.citation h2{
+    font-size: 30px;
+    font-weight: bold;
+    white-space:nowrap ;
+    overflow:hidden ;
+    border-right: 1px solid #1f2121;
+    width: 5ch;
+    animation: typing 2s infinite;transition: ease;
+
+}
+
+.about span{
+    color: red;
+}
+.citation span{
+    color: red;
+}
+@keyframes typing{
+    from{
+        width: 0;
+    } to{width: 10ch;}
+}
+
+
+

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Student Dashboard - UniCross Portal</title>
+</head>
+<body class="dashboard-body">
+    <!-- Header/Navigation -->
+    <header class="dashboard-header">
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="unicross.webp" alt="UniCross Logo" class="header-logo">
+                <h1>Unicross Portal</h1>
+            </div>
+            <div class="user-section">
+                <span id="userGreeting">Welcome, Student</span>
+                <button onclick="logout()" class="logout-btn"><i class="fa-solid fa-sign-out-alt"></i> Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Dashboard Content -->
+    <main class="dashboard-main">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <nav class="nav-menu">
+                <a href="#profile" class="nav-item active" onclick="showSection('profile')">
+                    <i class="fa-solid fa-user"></i> Profile
+                </a>
+                <a href="#fees" class="nav-item" onclick="showSection('fees')">
+                    <i class="fa-solid fa-money-bill"></i> My Fees
+                </a>
+                <a href="#transactions" class="nav-item" onclick="showSection('transactions')">
+                    <i class="fa-solid fa-receipt"></i> Transactions
+                </a>
+                <a href="#courses" class="nav-item" onclick="showSection('courses')">
+                    <i class="fa-solid fa-book"></i> Courses
+                </a>
+                <a href="#settings" class="nav-item" onclick="showSection('settings')">
+                    <i class="fa-solid fa-cog"></i> Settings
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Content Area -->
+        <section class="dashboard-content">
+            <!-- Profile Section -->
+            <div id="profile" class="content-section active">
+                <h2>Student Profile</h2>
+                <div class="profile-card">
+                    <div class="profile-header">
+                        <div class="profile-avatar">
+                            <i class="fa-solid fa-user-circle"></i>
+                        </div>
+                        <div class="profile-info">
+                            <h3 id="profileName">John Doe</h3>
+                            <p id="profileSPC">SPC001</p>
+                            <p id="profileEmail">john.doe@university.edu</p>
+                        </div>
+                    </div>
+                    <div class="profile-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Student Type:</span>
+                            <span id="profileType" class="detail-value">New Student</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Department:</span>
+                            <span id="profileDept" class="detail-value">-</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Available Courses:</span>
+                            <span id="profileAvailableCourses" class="detail-value">-</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Matric Number:</span>
+                            <span id="profileMatric" class="detail-value">N/A</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Registration Date:</span>
+                            <span class="detail-value">2026-01-15</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Account Status:</span>
+                            <span class="detail-value status-active"><i class="fa-solid fa-check-circle"></i> Active</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fees Section -->
+            <div id="fees" class="content-section">
+                <h2>My Fees</h2>
+                <div class="fees-container">
+                    <div class="summary-cards">
+                        <div class="summary-card total">
+                            <h4>Total Fees</h4>
+                            <p class="amount" id="totalFees">₦0.00</p>
+                        </div>
+                        <div class="summary-card paid">
+                            <h4>Paid</h4>
+                            <p class="amount" id="paidFees">₦0.00</p>
+                        </div>
+                        <div class="summary-card pending">
+                            <h4>Pending</h4>
+                            <p class="amount" id="pendingFees">₦0.00</p>
+                        </div>
+                    </div>
+
+                    <table class="fees-table">
+                        <thead>
+                            <tr>
+                                <th>Fee Type</th>
+                                <th>Amount</th>
+                                <th>Due Date</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="feesTableBody">
+                            <!-- Populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                <button class="btn-pay"><i class="fa-solid fa-credit-card"></i> Pay Fees Now</button>
+            </div>
+
+            <!-- Transactions Section -->
+            <div id="transactions" class="content-section">
+                <h2>Payment Transactions</h2>
+                <div class="account-info-banner">
+                    <i class="fa-solid fa-university"></i>
+                    <div>
+                        <strong>Account Number:</strong> <span id="accountNumber" class="account-highlight">7013060802</span>
+                    </div>
+                </div>
+                <table class="transactions-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Type</th>
+                            <th>Amount</th>
+                            <th>Account</th>
+                            <th>Reference</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="transactionsTableBody">
+                        <!-- Populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Courses Section -->
+            <div id="courses" class="content-section">
+                <h2>My Courses</h2>
+                <div class="courses-grid" id="coursesGrid">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Settings Section -->
+            <div id="settings" class="content-section">
+                <h2>Account Settings</h2>
+                <div class="settings-form">
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" id="settingsEmail" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="Enter your phone number">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <button class="btn-change-pwd"><i class="fa-solid fa-key"></i> Change Password</button>
+                    </div>
+                    <button class="btn-save-settings">Save Changes</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="dashboard-footer">
+        <p>Copyright@2026. All Right Reserved. | Powered by <a href="">Nugi Technology</a></p>
+    </footer>
+
+    <!-- Database and Scripts -->
+    <script src="database.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

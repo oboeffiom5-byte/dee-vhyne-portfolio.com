@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="unicoss.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>UniCross Portal - Student Dashboard</title>
+</head>
+<body>
+    <form action="" method="POST" id="loginForm">
+        <img src="unicross.webp" class="image">
+            <div class="login">
+                <i class="fa-solid fa-circle-info"></i>
+            <h3>How to Login</h3>
+            </div>
+            <ul>
+                <li>You need to enter your Username and Password </li>
+                <li>Your username is your Student Payment Code(SPC) i.e </li>
+                <li>For New Students, your password is your Jamb Reg. No </li>
+                <li>For Returning Students, your Password is your Matric No </li>
+                <li>Once logged in, you can view your profile and all the fees that you have paid </li>
+            </ul>
+            <p>
+                <h3 class="sign">Sign in to your dashboard</h3>
+                
+                <div class="input-box">
+                    <input type="text" placeholder="username" id="username" required><i class="fa-solid fa-user" id="icon"></i></div>
+                <p></p>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" id="password" required>
+                <i class="fa-solid fa-eye-slash" id="icon"></i>
+                </div>
+                
+                <p></p>
+                <div class="input-box"><input type="submit" value="Sign in" id="submit"></div>
+                <h3>OR</h3>
+                <div class="exams"><button><i class="fa-solid fa-lock"></i><a href="">MOP-UP COURSE REGISTRATION</a></button>
+                    <button><i class="fa-solid fa-money-bill"></i><a href="">PAY FEES </a></button>
+                    
+                    <button><i class="fa-solid fa-house"></i><a href="">Home</a></button> </div>
+                <button class="btn"><i class="fa-solid fa-print"></i><a href="">PRINT AND VERIFY INVOICE/RECEIPT</a></button>
+                
+    </form>
+    <footer>
+                    Copyright@2026.All Right Reserved. <br>
+                    Powered by <a href="">Nugi Technology</a>
+                </footer>
+
+    <!-- Database Configuration -->
+    <script src="database.js"></script>
+    <!-- Portal JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
